@@ -380,7 +380,6 @@ function Login() {
                     name="charityId"
                     value={signupForm.contribution.charityId}
                     onChange={handleContributionChange}
-                    required
                   >
                     <option value="">Choose an active charity</option>
                     {charities.map((charity) => (
