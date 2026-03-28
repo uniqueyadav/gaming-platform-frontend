@@ -275,7 +275,6 @@ function Login() {
                   required
                 />
               </label>
-
               <div className="draw-mechanics-card">
                 <div className="draw-mechanics-row">
                   <FaCalendarAlt />
@@ -382,6 +381,8 @@ function Login() {
                     onChange={handleContributionChange}
                   >
                     <option value="">Choose an active charity</option>
+                    <option value="">Fairway Futures</option>
+                    <option value="">Greens for Good</option>
                     {charities.map((charity) => (
                       <option key={charity._id} value={charity._id}>
                         {charity.name}
